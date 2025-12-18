@@ -1,0 +1,4 @@
+    INSERT INTO t_lookup 
+    SELECT 
+         LPAD(CAST(generate_series(1, 150000) AS TEXT), 10, '0'),
+         'Value_' || generate_series(1, 150000);
